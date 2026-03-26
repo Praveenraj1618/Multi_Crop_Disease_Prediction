@@ -1,0 +1,19 @@
+node_modules/
+dist/
+dist-ssr/
+*.local
+.env
+.env.*
+.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+
+# Machine Learning
+detection_code/multi-crop-disease-detection1.v1i.yolov8/
+# Keep the runs folder as it has the final trained weights, but ignore datasets
+
+# Editor dirs
+.vscode/
+.idea/
