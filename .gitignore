@@ -12,6 +12,8 @@ __pycache__/
 
 # Machine Learning
 detection_code/multi-crop-disease-detection1.v1i.yolov8/
+detection_code2/multi-crop-disease-detection1.v2i.yolov8/
+detecion_code ver2/
 # Keep the runs folder as it has the final trained weights, but ignore datasets
 
 # Editor dirs
