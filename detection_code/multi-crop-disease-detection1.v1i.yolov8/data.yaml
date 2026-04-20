@@ -1,0 +1,14 @@
+path: d:/UserData/Desktop/Multi Crop/multi-crop-disease-detection1.v1i.yolov8
+train: train/images
+val: valid/images
+test: test/images
+
+nc: 16
+names: ['Banana_Black_Sigatoka', 'Banana_Healthy', 'Banana_Yellow_Sigatoka', 'Chilli_Bacterial_Spot', 'Chilli_Healthy', 'Chilli_Leaf_Curl', 'Potato_Early_Blight', 'Potato_Healthy', 'Potato_Late_Blight', 'Rice_Bacterial_Blight', 'Rice_Blast', 'Rice_Brownspot', 'Rice_Healthy', 'Tomato_Early_Blight', 'Tomato_Healthy', 'Tomato_Late_Blight']
+
+roboflow:
+  workspace: praveens-workspace-3gtah
+  project: multi-crop-disease-detection1
+  version: 1
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/praveens-workspace-3gtah/multi-crop-disease-detection1/dataset/1

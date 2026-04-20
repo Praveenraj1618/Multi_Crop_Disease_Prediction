@@ -1,0 +1,2 @@
+D:/UserData/Desktop/Multi Crop\detection_code\multi-crop-disease-detection1.v1i.yolov8\data.yaml
+D:/UserData/Desktop/Multi Crop\detection_code2\multi-crop-disease-detection1.v2i.yolov8\data.yaml

@@ -1,21 +1,24 @@
-node_modules/
-dist/
-dist-ssr/
-*.local
-.env
-.env.*
-.DS_Store
+# Machine Learning Weights & Datasets
+*.pt
+*.pth
+/detection_code2/efficientnet_data/
+/detection_code2/multi-crop-*
+/detection_code2/runs/
 
 # Python
 __pycache__/
 *.py[cod]
+*$py.class
+.env
+venv/
+.venv/
+env/
 
-# Machine Learning
-detection_code/multi-crop-disease-detection1.v1i.yolov8/
-detection_code2/multi-crop-disease-detection1.v2i.yolov8/
-detecion_code ver2/
-# Keep the runs folder as it has the final trained weights, but ignore datasets
+# Node Modules
+node_modules/
+dist/
+.env.local
 
-# Editor dirs
-.vscode/
-.idea/
+# OS Files
+.DS_Store
+Thumbs.db
