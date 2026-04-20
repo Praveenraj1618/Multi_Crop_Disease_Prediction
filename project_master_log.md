@@ -17,6 +17,9 @@ To solve YOLO's classification weakness, we decided to separate "Localization" f
 *   **Dataset Size (Initial):** ~17,600 master YOLO photographs.
 *   **The Script (`generate_crops.py`):** We mapped YOLO's `data.yaml` math across 17,600 files. We algorithmically cropped only the diseased spots out and threw away the pure backgrounds. 
 *   **Resulting Micro-Dataset:** Successfully extracted and synthesized **45,228 localized micro-crop textures** mapped rigidly to 15 unique classes.
+    *   **Training Split:** 40,959 images (~90.5%)
+    *   **Validation Split:** 2,357 images (~5.2%)
+    *   **Testing Split:** 1,912 images (~4.2%)
 
 ## 4. Milestone 3: The Brain Transplant (EfficientNet-B0)
 **Timeline:** *Session 3: Transfer Learning via PyTorch*
@@ -37,8 +40,13 @@ Modified `api.py` to securely boot both YOLO (`best.pt`) and EfficientNet (`effi
 
 ## 6. Official Analytical Metrics
 
-### Dataset Specifics (15 Classes)
-The model was trained on 4 specific plant species:
+### Dataset Specifics & Data Splitting
+The data architecture scales out to exactly **45,228 instances** broken down into a rigorous `~90/5/5` ratio to ensure iron-clad testing:
+*   **Train Engine (90.5%):** 40,959 textures
+*   **Validation Gateway (5.2%):** 2,357 textures
+*   **Unseen Testing Vault (4.2%):** 1,912 textures
+
+The model was distributed across 15 distinct classes spanning 4 specific plant species:
 1. `Banana_Healthy` | `Banana_Sigatoka`
 2. `Chilli_Healthy` | `Chilli_Bacterial_Spot` | `Chilli_Leaf_Curl`
 3. `Potato_Healthy` | `Potato_Early_Blight` | `Potato_Late_Blight`
